@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Directions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COEP Campus Guide - Directions</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <style>
+        #map { height: 600px; width: 100%; }
+    </style>
 </head>
 <body>
-    <h2>Displaying Directions...</h2>
+    <h1>Route from {{ start }} to {{ end }}</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script>
+        var map = L.map('map').setView([18.5204, 73.8567], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var campusLocations = {
+            "COEP": [18.5204, 73.8567],
+            "Building B": [18.5206, 73.8587],
+            "Building C": [18.5210, 73.8600]
+        };
+
+        var start = "{{ start }}";
+        var end = "{{ end }}";
+
+        if (campusLocations[start] && campusLocations[end]) {
+            var startCoordinates = campusLocations[start];
+            var endCoordinates = campusLocations[end];
+
+            // Add markers
+            L.marker(startCoordinates).addTo(map).bindPopup(start).openPopup();
+            L.marker(endCoordinates).addTo(map).bindPopup(end).openPopup();
+
+            // Add routing
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(startCoordinates[0], startCoordinates[1]),
+                    L.latLng(endCoordinates[0], endCoordinates[1])
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
+        } else {
+            alert("Invalid start or end location. Please try again.");
+        }
+    </script>
 </body>
 </html>
