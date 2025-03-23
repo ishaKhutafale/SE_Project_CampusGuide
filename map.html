@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COEP Campus Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        .controls {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>COEP Campus Navigation</h2>
+    <div class="controls">
+        <label for="sourceSelect">Source:</label>
+        <select id="sourceSelect">
+            <option value="COEP">COEP</option>
+            <option value="Academic Complex">Academic Complex</option>
+            <option value="ENTC Extension">ENTC Extension</option>
+            <option value="ISL Lab">ISL Lab</option>
+            <option value="Foss Lab">Foss Lab</option>
+            <option value="Computer Department">Computer Department</option>
+            <option value="Mechanical Department">Mechanical Department</option>
+            <option value="Accounts Section">Accounts Section</option>
+            <option value="Subway">Subway</option>
+            <option value="Electrical Department">Electrical Department</option>
+            <option value="Applied Mechanics">Applied Mechanics</option>
+            <option value="ENTC Old Building">ENTC Old Building</option>
+            <option value="Instrumentation Department">Instrumentation Department</option>
+            <option value="Mini Auditorium">Mini Auditorium</option>
+        </select>
+
+        <label for="destinationSelect">Destination:</label>
+        <select id="destinationSelect">
+            <option value="COEP">COEP</option>
+            <option value="Academic Complex">Academic Complex</option>
+            <option value="ENTC Extension">ENTC Extension</option>
+            <option value="ISL Lab">ISL Lab</option>
+            <option value="Foss Lab">Foss Lab</option>
+            <option value="Computer Department">Computer Department</option>
+            <option value="Mechanical Department">Mechanical Department</option>
+            <option value="Accounts Section">Accounts Section</option>
+            <option value="Subway">Subway</option>
+            <option value="Electrical Department">Electrical Department</option>
+            <option value="Applied Mechanics">Applied Mechanics</option>
+            <option value="ENTC Old Building">ENTC Old Building</option>
+            <option value="Instrumentation Department">Instrumentation Department</option>
+            <option value="Mini Auditorium">Mini Auditorium</option>
+        </select>
+
+        <button onclick="findPath()">Find Path</button>
+        <button onclick="sendDirections()">Send Directions to Phone</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/static/indoor-path.js" defer></script>
+    <script src="/static/send-directions.js" defer></script>
+
+</body>
+</html>

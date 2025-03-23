@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Academic Complex to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855832, 18.531304],
+          [73.855591, 18.531245],
+          [73.855484, 18.531161],
+          [73.855347, 18.531217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to Mechanical Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.856277, 18.530363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Academic Complex to ISL Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855832, 18.531304],
+          [73.855239, 18.531301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Old Building to Computer Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.854971, 18.530988],
+          [73.855403, 18.530617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.85526,  18.53078],
+          [73.85554,  18.53102],
+          [73.85554,  18.53102],
+          [73.85536,  18.53118],
+          [73.855347, 18.531217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP to Academic Complex" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.8567, 18.5204],
+          [73.855832, 18.531304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP to Foss Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.8567, 18.5204],
+          [73.855304, 18.531388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Foss Lab to ISL Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855304, 18.531388],
+          [73.855239, 18.531301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Accounts Section to Subway" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856122, 18.529493],
+          [73.856723, 18.52994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to Applied Mechanics" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [73.85631, 18.530714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Extension to Electrical Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855347, 18.531217],
+          [73.855644, 18.529651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Subway to Mechanical Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856723, 18.52994],
+          [73.856277, 18.530363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Mini Auditorium to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855658, 18.531143],
+          [73.855347, 18.531217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Instrumentation Department to Foss Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855628, 18.530871],
+          [73.855304, 18.531388]
+        ]
+      }
+    }
+  ]
+}
