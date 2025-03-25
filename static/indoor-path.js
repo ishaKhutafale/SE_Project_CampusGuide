@@ -1,6 +1,6 @@
 // 📍 Step 1: Define Locations and Coordinates
 const locations = {
-    "COEP": [18.5204, 73.8567],
+    "COEP Main Building": [18.529432, 73.856570],
     "Academic Complex": [18.531304, 73.855832],
     "ENTC Extension": [18.531217, 73.855347],
     "ISL Lab": [18.531301, 73.855239],
@@ -37,7 +37,7 @@ async function loadGeoJson() {
 // 🗺️ Step 3: Initialize Map
 function displayMap() {
     // Initialize Map
-    map = L.map("map").setView(locations["COEP"], 17);
+    map = L.map("map").setView(locations["COEP Main Building"], 17);
 
     // Add OpenStreetMap tile layer
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
