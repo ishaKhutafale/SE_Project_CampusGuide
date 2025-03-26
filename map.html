@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COEP Campus Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        #map {
-            height: 500px;
-            width: 100%;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            background: #94d6f9;
+            color: white;
+            padding: 15px;
+            margin: 0;
         }
         .controls {
-            margin: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            background: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        select, button {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background: #678ba9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #525585;
+        }
+        #map {
+            height: calc(100vh - 80px);
+            width: 100%;
         }
     </style>
 </head>
@@ -18,7 +52,7 @@
     <div class="controls">
         <label for="sourceSelect">Source:</label>
         <select id="sourceSelect">
-            <option value="COEP Main Building">COEP Main Building</option>
+            <option value="COEP">COEP</option>
             <option value="Academic Complex">Academic Complex</option>
             <option value="ENTC Extension">ENTC Extension</option>
             <option value="ISL Lab">ISL Lab</option>
@@ -32,11 +66,16 @@
             <option value="ENTC Old Building">ENTC Old Building</option>
             <option value="Instrumentation Department">Instrumentation Department</option>
             <option value="Mini Auditorium">Mini Auditorium</option>
+            <option value="COEP Auditorium">COEP Auditorium</option>
+            <option value="Main Building">Main Building</option>
+            <option value="Civil Department">Civil Department</option>
+            <option value="Production Department">Production Department</option>
+            <option value="State Bank of India (COEP)">State Bank of India (COEP)</option>
         </select>
 
         <label for="destinationSelect">Destination:</label>
         <select id="destinationSelect">
-            <option value="COEP Main Building">COEP Main Building</option>
+            <option value="COEP">COEP</option>
             <option value="Academic Complex">Academic Complex</option>
             <option value="ENTC Extension">ENTC Extension</option>
             <option value="ISL Lab">ISL Lab</option>
@@ -50,6 +89,11 @@
             <option value="ENTC Old Building">ENTC Old Building</option>
             <option value="Instrumentation Department">Instrumentation Department</option>
             <option value="Mini Auditorium">Mini Auditorium</option>
+            <option value="COEP Auditorium">COEP Auditorium</option>
+            <option value="Main Building">Main Building</option>
+            <option value="Civil Department">Civil Department</option>
+            <option value="Production Department">Production Department</option>
+            <option value="State Bank of India (COEP)">State Bank of India (COEP)</option>
         </select>
 
         <button onclick="findPath()">Find Path</button>
@@ -61,6 +105,5 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="/static/indoor-path.js" defer></script>
     <script src="/static/send-directions.js" defer></script>
-
 </body>
 </html>
