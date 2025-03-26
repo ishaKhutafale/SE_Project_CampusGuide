@@ -25,7 +25,7 @@ def send_directions():
             return jsonify({"success": False, "message": "Missing Google Maps URL"}), 400
 
         # Email address to send directions
-        recipient_email = "shravanishinganwadikar@gmail.com"  # ✅ Change to receiver's email
+        recipient_email = "ishakhutafale2004@gmail.com"  # ✅ Change to receiver's email
 
         # Send email with directions
         if send_email(google_maps_url, recipient_email):
