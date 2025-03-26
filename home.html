@@ -1,39 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to CampusGuide</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: url('map.png') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #abd7dd;
+            background-blend-mode: overlay;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+        }
+        .image-block {
+            background: url('clgg.png') no-repeat center center;
+            background-size: contain;
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
         }
         h1 {
-            color: #4CAF50;
+            color: #FFFFFF;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #F0F0F0;
+            font-size: 1.2em;
+            margin-bottom: 40px;
         }
         .btn {
+            display: inline-block;
             padding: 15px 30px;
-            background-color: #4CAF50;
+            background-color: #6ca2a9;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #45a049;
+            background-color: #004D40;
+        }
+        .truck {
+            position: absolute;
+            bottom: 80px;
+            left: -150px;
+            width: 120px;
+            transition: transform 3s ease-in-out;
+        }
+        .move-truck {
+            transform: translateX(100vw);
         }
     </style>
+    <script>
+        function startTruckAnimation() {
+            const truck = document.querySelector('.truck');
+            truck.classList.add('move-truck');
+            setTimeout(() => {
+                window.location.href = 'map.html';
+            }, 3000);
+        }
+    </script>
 </head>
 <body>
 
-    <h1>Welcome to CampusGuide</h1>
-    <p>Your go-to resource for all campus-related information!</p>
-    
-    <a href="map.html" class="btn">Go to Next Page</a>
+    <div class="container">
+        <div class="image-block"></div>
+        <h1>Welcome to CampusGuide</h1>
+        <p>Your go-to resource for all campus-related information!</p>
+        
+        <a href="#" class="btn" onclick="startTruckAnimation()">Go to Next Page</a>
+        <img src="truck.png" class="truck" alt="Truck Animation" />
+    </div>
 
 </body>
 </html>
