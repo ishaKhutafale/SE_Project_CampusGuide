@@ -1,4 +1,4 @@
-// 📍 Step 1: Define Locations and Coordinates
+//  Step 1: Define Locations and Coordinates
 const locations = {
     "COEP Main Building": [18.529432, 73.856570],
     "Academic Complex": [18.531304, 73.855832],
@@ -13,14 +13,17 @@ const locations = {
     "Applied Mechanics": [18.530714, 73.85631],
     "ENTC Old Building":[18.531059, 73.855006],
     "Instrumentation Department": [18.530871, 73.855628],
-    "Mini Auditorium":[18.531143, 73.855658]
+    "Mini Auditorium":[18.531143, 73.855658],
+    "COEP Auditorium":[18.529350, 73.857372],
+    "Civil Department":[18.528744, 73.856685],
+    "Production Department":[18.529070, 73.857694],
+    "State Bank of India (COEP)":[18.529286, 73.857999]
 };
-
 let map;
 let currentPath = null;
 let geoJsonPaths = null; // Placeholder to store GeoJSON data
 
-// 🗺️ Step 2: Load GeoJSON from External File
+// Step 2: Load GeoJSON from External File
 async function loadGeoJson() {
     try {
         const response = await fetch('/static/paths.geojson');
@@ -28,13 +31,13 @@ async function loadGeoJson() {
             throw new Error("Failed to load GeoJSON file.");
         }
         geoJsonPaths = await response.json();
-        console.log("✅ GeoJSON data loaded successfully.");
+        console.log("GeoJSON data loaded successfully.");
     } catch (error) {
-        console.error("❌ Error loading GeoJSON:", error);
+        console.error("Error loading GeoJSON:", error);
     }
 }
 
-// 🗺️ Step 3: Initialize Map
+// Step 3: Initialize Map
 function displayMap() {
     // Initialize Map
     map = L.map("map").setView(locations["COEP Main Building"], 17);
@@ -56,7 +59,7 @@ function displayMap() {
     map.fitBounds(bounds);
 }
 
-// 🎯 Step 4: Draw Selected Path
+//  Step 4: Draw Selected Path
 function drawSelectedPath(source, destination) {
     // Remove the previous path if it exists
     if (currentPath) {
@@ -90,9 +93,9 @@ function drawSelectedPath(source, destination) {
             .bindPopup(`${source} to ${destination}`)
             .openPopup();
 
-        console.log(`✅ Path drawn: ${source} to ${destination}`);
+        console.log(`Path drawn: ${source} to ${destination}`);
     } else {
-        alert("❌ No valid path found between selected source and destination.");
+        alert(" No valid path found between selected source and destination.");
     }
 }
 
@@ -108,7 +111,7 @@ function getLocationName(lat, lon) {
 
 
 
-// 🎯 Step 6: Find Path Based on Selection
+// Step 6: Find Path Based on Selection
 function findPath() {
     const source = document.getElementById("sourceSelect").value;
     const destination = document.getElementById("destinationSelect").value;
@@ -116,7 +119,7 @@ function findPath() {
     if (source && destination && source !== destination) {
         drawSelectedPath(source, destination);
     } else {
-        alert("⚠️ Please select different source and destination.");
+        alert("Please select different source and destination.");
     }
 }
 

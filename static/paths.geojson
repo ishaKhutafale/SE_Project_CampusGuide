@@ -30,6 +30,24 @@
     },
     {
       "type": "Feature",
+      "properties": { "name": "Mechanical Department to Academic Complex" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856277, 18.530363],
+          [73.856267, 18.530269],
+          [73.855706, 18.530360],
+          [73.855379, 18.530630],
+          [73.85526,  18.53078],
+          [73.85554,  18.53102],
+          [73.855712, 18.531014],
+          [73.855846, 18.531143],
+          [73.855832, 18.531304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "name": "Academic Complex to ISL Lab" },
       "geometry": {
         "type": "LineString",
@@ -43,6 +61,19 @@
     },
     {
       "type": "Feature",
+      "properties": { "name": "Academic Complex to Foss Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855832, 18.531304],
+          [73.855631, 18.531253],
+          [73.855435, 18.531128],
+          [73.855304, 18.531388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "name": "ENTC Old Building to Computer Department" },
       "geometry": {
         "type": "LineString",
@@ -51,6 +82,35 @@
           [73.854971, 18.530988],
           [73.855403, 18.530617],
           [73.855435, 18.530642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Old Building to Mechanical Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855006, 18.531059],
+          [73.854971, 18.530988],
+          [73.855403, 18.530617],
+          [73.855706, 18.530360],
+          [73.856267, 18.530269],
+          [73.856277, 18.530363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Old Building to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855006, 18.531059],
+          [73.854971, 18.530988],
+          [73.855237, 18.530770],
+          [73.855502, 18.531009],
+          [73.855347, 18.531217]
         ]
       }
     },
@@ -180,6 +240,457 @@
         "coordinates": [
           [73.855628, 18.530871],
           [73.855304, 18.531388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Instrumentation Department to Applied Mechanics" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855628, 18.530871],
+          [73.855805, 18.531080],
+          [73.85631, 18.530714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to Instrumentation Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.855239, 18.530762],
+          [73.855500, 18.531019],
+          [73.855628, 18.530871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to Foss Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.855239, 18.530762],
+          [73.855500, 18.531019],
+          [73.855304, 18.531388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to ISL Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.855239, 18.530762],
+          [73.855500, 18.531019],
+          [73.855239, 18.531301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to Applied Mechanics" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.855379, 18.530630],   
+          [73.855706, 18.530360],
+          [73.855950, 18.530825],
+          [73.85631, 18.530714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to Academic Complex" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.85526,  18.53078],
+          [73.85554,  18.53102],
+          [73.855712, 18.531014],
+          [73.855846, 18.531143],
+          [73.855832, 18.531304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to Civil Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [73.855687,18.529691],
+          [73.856387,18.529543],
+          [73.856294,18.529027],
+          [73.856672,18.528892],
+          [73.856685, 18.528744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Old Building to Academic Complex" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855006, 18.531059],
+          [73.854971, 18.530988],
+          [73.855237, 18.530770],
+          [73.855502, 18.531009],
+          [73.855712, 18.531014],
+          [73.855846, 18.531143],
+          [73.855832, 18.531304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Computer Department to COEP Main Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855435, 18.530642],
+          [73.855363, 18.530594],
+          [73.855685, 18.530357],
+          [73.856208, 18.530250],
+          [73.856792, 18.530148],
+          [73.856723, 18.52994],
+          [73.856653, 18.529578],
+          [73.856570, 18.529432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Mechanical Department to COEP Main Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856277, 18.530363],
+          [73.856294, 18.530214],
+          [73.856792, 18.530163],
+          [73.856723, 18.52994],
+          [73.856653, 18.529578],
+          [73.856570, 18.529432]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "name": "ENTC Old Building to COEP Main Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855006, 18.531059],
+          [73.854934, 18.531008],
+          [73.855363, 18.530594],
+          [73.855685, 18.530357],
+          [73.856208, 18.530250],
+          [73.856792, 18.530148],
+          [73.856723, 18.52994],
+          [73.856653, 18.529578],
+          [73.856570, 18.529432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to ISL Lab" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856669, 18.529722],
+          [73.856774, 18.530144],
+          [73.856725, 18.530192],
+          [73.855712, 18.530347],
+          [73.855229, 18.530762],
+          [73.855575, 18.531052],
+          [73.85536,  18.53118],
+          [73.855239, 18.531301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856669, 18.529722],
+          [73.856774, 18.530144],
+          [73.856725, 18.530192],
+          [73.855712, 18.530347],
+          [73.855229, 18.530762],
+          [73.855575, 18.531052],
+          [73.85536,  18.53118],
+          [73.855347, 18.531217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Applied Mechanics to ENTC Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.85631, 18.530714],
+          [73.855993, 18.530892],
+          [73.855787, 18.531082],
+          [73.855666, 18.530986],
+          [73.855497, 18.531026],
+          [73.855347, 18.531217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Applied Mechanics to ENTC Old Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.85631, 18.530714],
+          [73.855993, 18.530892],
+          [73.855787, 18.531082],
+          [73.855666, 18.530986],
+          [73.855502, 18.531009],
+          [73.855237, 18.530770],
+          [73.854971, 18.530988],
+          [73.855006, 18.531059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Applied Mechanics to Academic Complex" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.85631, 18.530714],
+          [73.855993, 18.530892],
+          [73.855787, 18.531082],
+          [73.855846, 18.531143],
+          [73.855832, 18.531304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to Civil Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [73.855687,18.529691],
+          [73.856387,18.529543],
+          [73.856294,18.529027],
+          [73.856672,18.528892],
+          [73.856685, 18.528744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to COEP Main Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [ 73.856387,18.529549],
+          [ 73.856567,18.529485],
+          [ 73.856570,18.529432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to COEP Auditorium" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [73.855685,18.529694],
+          [73.856393,18.529556],
+          [73.857020,18.529385],
+          [73.857082,18.529505],
+         [ 73.857372,18.529350]
+  
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Electrical Department to Production Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.855644, 18.529651],
+          [73.855685,18.529694],
+          [73.856393,18.529556],
+          [73.857020,18.529385],
+          [ 73.857063,18.529235],
+          [ 73.857560,18.529129],
+          [ 73.857694,18.529070]
+  
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Civil Department to COEP Main Building" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+      [73.856685,18.528744],
+      [ 73.856693,18.528882],
+      [73.856288,18.529032],
+      [73.856398,18.529538],
+      [ 73.856401,18.529548],
+      [73.856597,18.529480],
+      [ 73.856570,18.529432]
+  
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Civil Department to  Production Department" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+      [73.856685,18.528744],
+      [ 73.856693,18.528882],
+      [73.856924,18.528821],
+      [ 73.857106,18.529218],
+      [73.857552,18.529144],
+      [ 73.857694,18.529070]
+  
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Civil Department to COEP Auditorium" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+      [73.856685,18.528744],
+      [ 73.856693,18.528882],
+      [73.856924,18.528821],
+      [ 73.857106,18.529218],
+      [73.857058,18.529246],
+      [73.857077,18.529482],
+      [ 73.857372,18.529350]
+     
+  
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to Mini Auditorium" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856669, 18.529722],
+          [73.856774, 18.530144],
+          [73.856725, 18.530192],
+          [73.855712, 18.530347],
+          [73.855229, 18.530762],
+          [73.855575, 18.531052],
+          [73.855502, 18.531176],
+          [73.855642, 18.531271],
+          [73.855768, 18.531201],
+          [73.855658, 18.531143]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to Account Section" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856573, 18.529487],
+          [73.856395, 18.529517],
+          [73.856159, 18.529573],
+          [73.856122, 18.529493]
+         
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to Subway" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856723, 18.52994]
+         
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to COEP Auditorium" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856642, 18.529451],
+          [73.856959, 18.529360],
+          [73.857372, 18.529350]
+         
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to Production Department " },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856642, 18.529451],
+          [73.856959, 18.529360],
+          [73.857104, 18.529212],
+          [73.857356, 18.529166],
+          [73.857694, 18.529070]
+          
+         
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "COEP Main Building to State Bank of India (COEP) " },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.856570, 18.529432],
+          [73.856642, 18.529451],
+          [73.856959, 18.529360],
+          [73.857104, 18.529212],
+          [73.857356, 18.529166], 
+          [73.857533, 18.529136],
+          [73.857613, 18.529339], 
+          [73.857999, 18.529286]
         ]
       }
     }

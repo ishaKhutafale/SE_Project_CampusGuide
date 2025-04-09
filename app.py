@@ -19,13 +19,13 @@ def index():
 def send_directions():
     try:
         data = request.json
-        google_maps_url = data.get('url')  # ✅ Corrected key to 'url'
+        google_maps_url = data.get('url')  
 
         if not google_maps_url:
             return jsonify({"success": False, "message": "Missing Google Maps URL"}), 400
 
         # Email address to send directions
-        recipient_email = "ishakhutafale2004@gmail.com"  # ✅ Change to receiver's email
+        recipient_email = "ishakhutafale2004@gmail.com"  # Change to receiver's email
 
         # Send email with directions
         if send_email(google_maps_url, recipient_email):
@@ -38,11 +38,11 @@ def send_directions():
 
 
 def send_email(google_maps_url, recipient_email):
-    sender_email = "ishakhutafale2004@gmail.com"  # ✅ Your Gmail address
+    sender_email = "ishakhutafale2004@gmail.com"  # Your Gmail address
     sender_password = "vqamrkoulyfkjwlt"  # ⚠️ Use App Password (Not normal password)
 
-    subject = "Directions from Google Maps"
-    body = f"Here is the Google Maps link for your directions: {google_maps_url}"
+    subject = "Directions to Your Destination on Campus"
+    body = f"As part of your CampusGuide experience, here is a convenient Google Maps link to help you navigate around campus: {google_maps_url}"
 
     message = f"Subject: {subject}\n\n{body}"
 
